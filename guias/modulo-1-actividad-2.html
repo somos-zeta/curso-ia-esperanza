@@ -148,6 +148,7 @@ body { font-family: 'Barlow', sans-serif; background: #fafafa;
 .tool-dot { width:8px; height:8px; border-radius:50%; background:var(--zeta-primary); flex-shrink:0; }
 .tool-dot.gemini { background:#1a73e8; } .tool-dot.chatgpt { background:#10a37f; }
 .tool-dot.claude { background:#d97757; } .tool-dot.notebooklm { background:#e8710a; }
+.tool-dot.qwen { background:#615ced; } .tool-dot.meta { background:#0866ff; }
 
 /* ── Steps ── */
 .steps-list { display:flex; flex-direction:column; gap:0; }
@@ -330,7 +331,7 @@ select.task-input { cursor:pointer; }
 .ql-link .ql-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
 .ql-link .ql-dot.gemini { background:#1a73e8; } .ql-link .ql-dot.chatgpt { background:#10a37f; }
 .ql-link .ql-dot.meta { background:#0866ff; } .ql-link .ql-dot.flow { background:#34a853; }
-.ql-link .ql-dot.claude { background:#d97757; }
+.ql-link .ql-dot.claude { background:#d97757; } .ql-link .ql-dot.qwen { background:#615ced; }
 .ql-link .ql-dot.notebook { background:#e8710a; }
 
 /* ── Access links (acceso desde la compu) ── */
@@ -2292,7 +2293,7 @@ Antes de escribir, comprobá que cada precio y cada promesa del catálogo cierre
   
   <div class="alert important">
     <span class="alert-icon">⚖️</span>
-    <div><strong>¿De quién es lo que generaste?</strong> Lo vemos al cierre del encuentro, pero ya sirve para elegir. Google dice que no reclama la propiedad de lo que generás en Gemini y en Flow, y prohíbe hacer pasar contenido generado con IA como si lo hubiera hecho una persona. Meta no te cede la propiedad y te hace responsable de cómo lo usás: por eso, lo que sale de Meta AI, como borrador. <span class="a2c-fecha">términos leídos el 14/10/2026</span></div>
+    <div><strong>¿De quién es lo que generaste?</strong> Lo vemos al cierre del encuentro, pero ya sirve para elegir. Google dice que no reclama la propiedad de lo que generás en Gemini y en Flow, y prohíbe hacer pasar contenido generado con IA como si lo hubiera hecho una persona. Meta no te cede la propiedad y te hace responsable de cómo lo usás: por eso, lo que sale de Meta AI, como borrador. <span class="a2c-fecha">términos leídos el 14/10/2026</span><br><strong>Qwen también genera imagen y video gratis, pero no la uses para el taller:</strong> sus condiciones limitan el servicio a uso personal y no comercial. <span class="a2c-fecha">leídas el 19/10/2026</span></div>
   </div>
 
   <div class="result-panel">
@@ -3056,6 +3057,7 @@ Antes de escribir, comprobá que cada precio y cada promesa del catálogo cierre
       <p class="a2p-herr-uso">Para: borradores, probar encuadres e ideas.</p>
     </div>
   </div>
+  <p class="area-sub"><strong>Qwen no entra en el reparto.</strong> Genera imágenes gratis, pero sus condiciones limitan el servicio a uso personal y no comercial (leídas el 19/10/2026), y estas piezas son para vender.</p>
 
   <div class="subsection-title"><span class="sub-num" style="background:var(--zeta-primary);">⚙</span>Planificador del cupo</div>
   <p class="area-sub">Elegí cuántas imágenes te faltan, desde qué día arrancás y con qué herramientas contás. El planificador te propone el reparto. El domingo queda libre para revisar y entregar, salvo que no quede otra.</p>
@@ -3590,6 +3592,11 @@ Estilo: fotografía de producto artesanal con luz natural de ventana, suave y la
       <p class="a2r-der-fuente">Términos de Meta AI, 13/05/2026.</p>
       <p>No te cede la propiedad de lo que genera, y la responsabilidad por lo que publiques es tuya. Por eso en esta actividad queda para <strong>borradores</strong>.</p>
     </div>
+  </div>
+
+  <div class="alert warning">
+    <span class="alert-icon">🚫</span>
+    <div><strong>¿Y Qwen?</strong> La abriste en la Actividad 1, pero en esta no se usa. Sus condiciones dicen que el servicio es «for private and non-commercial use only»: solo para uso personal y no comercial. Un calendario para vender es uso comercial, aunque lo generado sea tuyo. <span class="a2r-chip fecha">condiciones vigentes desde el 10/09/2026, leídas el 19/10/2026</span></div>
   </div>
 
   <div class="info-grid cols-3">
