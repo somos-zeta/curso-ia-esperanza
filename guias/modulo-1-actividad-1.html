@@ -148,6 +148,7 @@ body { font-family: 'Barlow', sans-serif; background: #fafafa;
 .tool-dot { width:8px; height:8px; border-radius:50%; background:var(--zeta-primary); flex-shrink:0; }
 .tool-dot.gemini { background:#1a73e8; } .tool-dot.chatgpt { background:#10a37f; }
 .tool-dot.claude { background:#d97757; } .tool-dot.notebooklm { background:#e8710a; }
+.tool-dot.qwen { background:#615ced; } .tool-dot.meta { background:#0866ff; }
 
 /* ── Steps ── */
 .steps-list { display:flex; flex-direction:column; gap:0; }
@@ -330,7 +331,7 @@ select.task-input { cursor:pointer; }
 .ql-link .ql-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
 .ql-link .ql-dot.gemini { background:#1a73e8; } .ql-link .ql-dot.chatgpt { background:#10a37f; }
 .ql-link .ql-dot.meta { background:#0866ff; } .ql-link .ql-dot.flow { background:#34a853; }
-.ql-link .ql-dot.claude { background:#d97757; }
+.ql-link .ql-dot.claude { background:#d97757; } .ql-link .ql-dot.qwen { background:#615ced; }
 .ql-link .ql-dot.notebook { background:#e8710a; }
 
 /* ── Access links (acceso desde la compu) ── */
@@ -1551,6 +1552,8 @@ body.cover-open { overflow: hidden; }
     <a class="ql-link" href="https://gemini.google.com" target="_blank" rel="noopener"><span class="ql-dot gemini"></span>Gemini</a>
     <a class="ql-link" href="https://chatgpt.com" target="_blank" rel="noopener"><span class="ql-dot chatgpt"></span>ChatGPT</a>
     <a class="ql-link" href="https://claude.ai" target="_blank" rel="noopener"><span class="ql-dot claude"></span>Claude</a>
+    <a class="ql-link" href="https://chat.qwen.ai" target="_blank" rel="noopener"><span class="ql-dot qwen"></span>Qwen</a>
+    <a class="ql-link" href="https://www.meta.ai" target="_blank" rel="noopener"><span class="ql-dot meta"></span>Meta AI</a>
   </div>
 
 <!-- ==ACTIVIDADES== -->
@@ -1873,9 +1876,9 @@ body.cover-open { overflow: hidden; }
   <div class="activity-header">
     <div class="activity-badge">Paso 2</div>
     <h1 class="activity-title">Creá tus cuentas<br>y unite al aula</h1>
-    <p class="activity-desc">Antes de usar una herramienta de inteligencia artificial hay que tenerla abierta. En este paso te unís al aula del curso en Google Classroom, creás tus cuentas en Gemini, ChatGPT y Claude, y comprobás que cada una responde. Es lo que necesitás para poder seguir con el resto de la actividad.</p>
+    <p class="activity-desc">Antes de usar una herramienta de inteligencia artificial hay que tenerla abierta. En este paso te unís al aula del curso en Google Classroom, creás tus cuentas en Gemini, ChatGPT, Claude, Qwen y Meta AI, y comprobás que cada una responde. Es lo que necesitás para poder seguir con el resto de la actividad.</p>
     <div class="activity-meta">
-      <div class="meta-item">⏱ 30 minutos</div>
+      <div class="meta-item">⏱ 45 minutos</div>
       <div class="meta-item">👤 Individual</div>
       <div class="meta-item">💻📱 Computadora o celular</div>
     </div>
@@ -1885,7 +1888,7 @@ body.cover-open { overflow: hidden; }
     <h3>¿Qué vas a lograr?</h3>
     <ul class="objectives-list">
       <li>Unirte al aula del curso en <strong>Google Classroom</strong> con el código de la clase.</li>
-      <li>Tener abiertas, con tu sesión iniciada, las tres herramientas del curso: <strong>Gemini</strong>, <strong>ChatGPT</strong> y <strong>Claude</strong>.</li>
+      <li>Tener abiertas, con tu sesión iniciada, las cinco herramientas del curso: <strong>Gemini</strong>, <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Qwen</strong> y <strong>Meta AI</strong>.</li>
       <li>Comprobar que cada una responde, con <strong>el mismo pedido de prueba</strong>, para poder comparar.</li>
       <li>Saber qué hacer si un alta se traba: un código que no llega, una cuenta bloqueada o una página que no abre.</li>
     </ul>
@@ -1908,7 +1911,7 @@ body.cover-open { overflow: hidden; }
   </div>
   <div class="timing-banner">
     <span class="timing-icon">⏱</span>
-    <span><strong>Tiempo estimado: 30 minutos.</strong> Una forma de ordenarlo: unos 5 minutos para el aula, unos 8 para cada herramienta y lo que queda para el checklist final. Si un alta se demora, seguí con la siguiente y volvé después.</span>
+    <span><strong>Tiempo estimado: 45 minutos.</strong> Una forma de ordenarlo: unos 5 minutos para el aula, unos 7 para cada herramienta y lo que queda para el checklist final. Si un alta se demora, seguí con la siguiente y volvé después.</span>
   </div>
 
   <!-- ══════════ UNIRSE AL AULA ══════════ -->
@@ -1920,12 +1923,7 @@ body.cover-open { overflow: hidden; }
     <div class="path-arrow">→</div>
     <div class="path-card"><div class="path-card-num">2</div><div class="path-card-title">Tocá el + y «Unirse a una clase»</div><div class="path-card-desc">En la pantalla principal de Classroom, tocá el signo <strong>+</strong> y elegí <strong>«Unirse a una clase»</strong>.</div></div>
     <div class="path-arrow">→</div>
-    <div class="path-card"><div class="path-card-num">3</div><div class="path-card-title">Escribí el código de la clase</div><div class="path-card-desc">Ingresá el código <strong>35ngz4q3</strong> y confirmá. El curso tiene que aparecer en tu lista de clases.</div></div>
-  </div>
-
-  <div class="prompt-box">
-    <div class="prompt-header"><span class="prompt-label">🔑 Código de la clase</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button></div>
-    <div class="prompt-text">35ngz4q3</div>
+    <div class="path-card"><div class="path-card-num">3</div><div class="path-card-title">Escribí el código de la clase</div><div class="path-card-desc">Ingresá el código que se compartió en la clase y confirmá. Si no lo tenés, pedíselo al docente. El curso tiene que aparecer en tu lista de clases.</div></div>
   </div>
 
   
@@ -1938,10 +1936,10 @@ body.cover-open { overflow: hidden; }
     <div><strong>Si no te deja unirte:</strong> revisá el código carácter por carácter (son letras minúsculas y números) o pegalo con el botón <em>Copiar</em>. Si Classroom rechaza tu cuenta, probá con tu cuenta personal de Google en lugar de la de un trabajo o de un colegio. Si sigue sin funcionar, escribinos: el contacto está al pie de la guía.</div>
   </div>
 
-  <!-- ══════════ LAS TRES HERRAMIENTAS ══════════ -->
-  <div class="section-title"><span class="title-accent"></span>Abrí y probá las tres herramientas</div>
-  <p class="area-sub">Hacé las tres, una por una: durante el curso las usamos y comparamos lo que responde cada una. Abrí el bloque de la herramienta, seguí los pasos y al final copiá el pedido de prueba. <strong>El pedido es el mismo en las tres</strong>, a propósito, para que puedas comparar las respuestas. Es corto porque solo sirve para comprobar que la herramienta responde: armar mejores pedidos viene en los pasos siguientes.</p>
-  <p class="area-sub">El tema del pedido es el del caso con el que trabaja el curso: el Taller Aguaribay, un emprendimiento ficticio de velas de soja y jabones artesanales de Esperanza. Dejá las tres herramientas abiertas en pestañas del navegador: más adelante vas a ir y venir entre ellas.</p>
+  <!-- ══════════ LAS CINCO HERRAMIENTAS ══════════ -->
+  <div class="section-title"><span class="title-accent"></span>Abrí y probá las cinco herramientas</div>
+  <p class="area-sub">Hacé las cinco, una por una: durante el curso las usamos y comparamos lo que responde cada una. Abrí el bloque de la herramienta, seguí los pasos y al final copiá el pedido de prueba. <strong>El pedido es el mismo en todas</strong>, a propósito, para que puedas comparar las respuestas. Es corto porque solo sirve para comprobar que la herramienta responde: armar mejores pedidos viene en los pasos siguientes.</p>
+  <p class="area-sub">El tema del pedido es el del caso con el que trabaja el curso: el Taller Aguaribay, un emprendimiento ficticio de velas de soja y jabones artesanales de Esperanza. Dejá las herramientas abiertas en pestañas del navegador: más adelante vas a ir y venir entre ellas.</p>
 
   <!-- ── 1 · Gemini ── -->
   <div class="model-accordion p2-acc">
@@ -2114,6 +2112,118 @@ body.cover-open { overflow: hidden; }
     </div>
   </div>
 
+  <!-- ── 4 · Qwen ── -->
+  <div class="model-accordion p2-acc">
+    <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="p2-acc-qwen" onclick="p2Alternar(event, 'p2-acc-qwen', this)" onkeydown="p2AccTecla(event, 'p2-acc-qwen', this)">
+      <span class="p2-acc-t"><span class="tool-dot qwen"></span><span class="p2-acc-n">4 · Qwen</span><span class="p2-acc-u">chat.qwen.ai</span><span class="p2-chip">Plan gratuito</span></span>
+      <span class="p2-flecha" aria-hidden="true">▼</span>
+    </div>
+    <div class="accordion-body" id="p2-acc-qwen">
+      <p class="area-sub">Qwen es la herramienta de Alibaba. Se puede probar sin cuenta, pero para el curso creá una: con la cuenta se guardan tus chats, se amplían los límites de uso y podés cargar tu perfil en el Paso 3. Podés crearla con tu correo, con tu cuenta de Google o con la de Apple.</p>
+      <div class="steps-list">
+        <div class="step"><div class="step-num">1</div><div class="step-body">
+          <div class="step-title">Abrí Qwen</div>
+          <div class="step-content"><p>Entrá a <strong>chat.qwen.ai</strong> desde el navegador de la computadora o del celular.</p>
+          <p><a class="app-dl-link" href="https://chat.qwen.ai" target="_blank" rel="noopener">Abrir Qwen ↗</a></p></div>
+        </div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">
+          <div class="step-title">Elegí cómo crear la cuenta o iniciar sesión</div>
+          <div class="step-content"><p>Tocá <strong>Iniciar sesión</strong> y elegí registrarte con tu correo, con tu cuenta de Google o con la de Apple. Si ya tenías una cuenta, iniciá sesión con el mismo método que usaste al crearla.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body">
+          <div class="step-title">Seguí el asistente</div>
+          <div class="step-content"><p>Si te registrás con el correo, te va a pedir que lo confirmes con un código o un enlace. Si te muestra condiciones de uso, leelas antes de aceptar.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body">
+          <div class="step-title">Hacé el pedido de prueba</div>
+          <div class="step-content"><p>Copiá el pedido, pegalo en el cuadro de texto de Qwen y enviá.</p>
+            <div class="prompt-box">
+              <div class="prompt-header"><span class="prompt-label">🟣 Pedido de prueba · Qwen</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button></div>
+              <div class="pr-legend">
+                <div class="pr-legend-item"><div class="pr-legend-dot" style="background:#80d8a0;"></div><span>Tarea</span></div>
+                <div class="pr-legend-item"><div class="pr-legend-dot" style="background:#d090f8;"></div><span>Formato</span></div>
+              </div>
+              <div class="prompt-text"><span class="pr-preguntas">Explicame </span><span class="pr-contexto">en cinco líneas, con lenguaje simple,</span><span class="pr-preguntas"> qué es una vela de soja y en qué se diferencia de una de parafina.</span></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="alert success">
+        <span class="alert-icon">✅</span>
+        <div><strong>Qué tenés que ver cuando salió bien:</strong> la pantalla de conversación de Qwen con tu sesión iniciada y un cuadro para escribir. Al enviar el pedido de prueba, te responde en unas cinco líneas. Si ves eso, esta herramienta está lista: marcala en el checklist de más abajo.</div>
+      </div>
+
+      
+      <div class="p2-errores">
+        <h4>⚠ Errores comunes</h4>
+        <ul>
+          <li><strong>Empezaste a usarla sin iniciar sesión.</strong> Funciona, pero tus chats no quedan guardados y no vas a poder cargar tu perfil. Fijate que arriba o abajo a la izquierda aparezca tu nombre o tu foto; si dice «Iniciar sesión», todavía no entraste.</li>
+          <li><strong>La pantalla aparece en inglés.</strong> Buscá el idioma en la Configuración de tu cuenta y elegí español. Aunque la pantalla siga en inglés, si le escribís en español te responde en español.</li>
+          <li><strong>No llega el código de verificación.</strong> Revisá la carpeta de correo no deseado y esperá unos minutos antes de pedir otro. Más ayuda en «Si algo se traba», al final de este paso.</li>
+          <li><strong>La página no carga en la red en la que estás.</strong> Probá con los datos del celular o con otro navegador.</li>
+        </ul>
+      </div>
+      <div class="p2-movil"><span>📱</span><span><strong>En el celular (opcional):</strong> buscá la aplicación de Qwen en la tienda de tu celular e iniciá sesión con la misma cuenta. Fijate que la publique Alibaba.</span></div>
+    </div>
+  </div>
+
+  <!-- ── 5 · Meta AI ── -->
+  <div class="model-accordion p2-acc">
+    <div class="accordion-header" role="button" tabindex="0" aria-expanded="false" aria-controls="p2-acc-meta" onclick="p2Alternar(event, 'p2-acc-meta', this)" onkeydown="p2AccTecla(event, 'p2-acc-meta', this)">
+      <span class="p2-acc-t"><span class="tool-dot meta"></span><span class="p2-acc-n">5 · Meta AI</span><span class="p2-acc-u">meta.ai</span><span class="p2-chip">Plan gratuito</span></span>
+      <span class="p2-flecha" aria-hidden="true">▼</span>
+    </div>
+    <div class="accordion-body" id="p2-acc-meta">
+      <p class="area-sub">Meta AI es la herramienta de Meta, la empresa de Facebook, Instagram y WhatsApp. Es la misma IA del círculo azul que aparece en WhatsApp, pero para el curso usala desde la página: ahí es más cómodo pegar pedidos y revisar las respuestas.</p>
+      <div class="steps-list">
+        <div class="step"><div class="step-num">1</div><div class="step-body">
+          <div class="step-title">Abrí Meta AI</div>
+          <div class="step-content"><p>Entrá a <strong>meta.ai</strong> desde el navegador de la computadora o del celular.</p>
+          <p><a class="app-dl-link" href="https://www.meta.ai" target="_blank" rel="noopener">Abrir Meta AI ↗</a></p></div>
+        </div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">
+          <div class="step-title">Iniciá sesión</div>
+          <div class="step-content"><p>Buscá la opción para iniciar sesión. Lo más simple es entrar con tu cuenta de <strong>Facebook</strong> o de <strong>Instagram</strong>. Si no tenés ninguna de las dos, seguí las opciones que te muestra la pantalla para crear una cuenta de Meta con tu correo.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body">
+          <div class="step-title">Seguí el asistente</div>
+          <div class="step-content"><p>Puede pedirte que confirmes la cuenta con un código y mostrarte condiciones de uso: leelas antes de aceptar.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body">
+          <div class="step-title">Hacé el pedido de prueba</div>
+          <div class="step-content"><p>Copiá el pedido, pegalo en el cuadro de texto de Meta AI y enviá.</p>
+            <div class="prompt-box">
+              <div class="prompt-header"><span class="prompt-label">🔷 Pedido de prueba · Meta AI</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button></div>
+              <div class="pr-legend">
+                <div class="pr-legend-item"><div class="pr-legend-dot" style="background:#80d8a0;"></div><span>Tarea</span></div>
+                <div class="pr-legend-item"><div class="pr-legend-dot" style="background:#d090f8;"></div><span>Formato</span></div>
+              </div>
+              <div class="prompt-text"><span class="pr-preguntas">Explicame </span><span class="pr-contexto">en cinco líneas, con lenguaje simple,</span><span class="pr-preguntas"> qué es una vela de soja y en qué se diferencia de una de parafina.</span></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="alert success">
+        <span class="alert-icon">✅</span>
+        <div><strong>Qué tenés que ver cuando salió bien:</strong> la pantalla de conversación de Meta AI con tu sesión iniciada y un cuadro para escribir. Al enviar el pedido de prueba, te responde en unas cinco líneas. Si ves eso, esta herramienta está lista: marcala en el checklist de más abajo.</div>
+      </div>
+
+      
+      <div class="p2-errores">
+        <h4>⚠ Errores comunes</h4>
+        <ul>
+          <li><strong>Un botón para compartir o publicar la conversación.</strong> No lo toques: una conversación publicada puede quedar a la vista de otras personas. Lo que hablás con Meta AI tiene que quedar entre vos y la herramienta.</li>
+          <li><strong>Entraste con una cuenta que no es la tuya.</strong> Si en esa computadora hay una sesión de Facebook o de Instagram de otra persona, Meta AI la toma. Cerrala o abrí una ventana privada e iniciá sesión con la tuya.</li>
+          <li><strong>No llega el código de verificación.</strong> Revisá la carpeta de correo no deseado y esperá unos minutos antes de pedir otro. Más ayuda en «Si algo se traba», al final de este paso.</li>
+          <li><strong>La página no carga en la red en la que estás.</strong> Probá con los datos del celular o con otro navegador.</li>
+        </ul>
+      </div>
+      <div class="p2-movil"><span>📱</span><span><strong>En el celular (opcional):</strong> en WhatsApp ya la tenés, en el círculo azul de la pantalla de chats. También hay una aplicación de Meta AI en la tienda de tu celular: fijate que la publique Meta.</span></div>
+    </div>
+  </div>
+
   <div class="alert tip">
     <span class="alert-icon">⏳</span>
     <div><strong>Qué esperar del plan gratuito.</strong> Los planes gratuitos tienen límites de uso. En <strong>ChatGPT</strong>, los mensajes de texto no tienen un tope diario publicado, pero sí hay un máximo de <strong>3 archivos subidos por día</strong>; las imágenes y la voz tienen un tope aparte que no se publica. En <strong>Claude</strong>, el uso se mide en una ventana que se renueva cada <strong>5 horas</strong>, sin un número de mensajes publicado. Si una herramienta te avisa que llegaste al límite, seguí con otra y volvé más tarde.</div>
@@ -2122,7 +2232,7 @@ body.cover-open { overflow: hidden; }
 
   <div class="alert tip">
     <span class="alert-icon">📊</span>
-    <div><strong>Cuando tengas las tres respuestas, compará.</strong> Fijate si respetaron lo que pediste (cinco líneas, lenguaje simple) y si explican de qué está hecha cada cera: la de soja se hace con aceite de soja y la parafina deriva del petróleo. Si dos respuestas se contradicen en un dato, es una señal para verificarlo en otra fuente: ninguna herramienta acierta siempre.</div>
+    <div><strong>Cuando tengas las cinco respuestas, compará.</strong> Fijate si respetaron lo que pediste (cinco líneas, lenguaje simple) y si explican de qué está hecha cada cera: la de soja se hace con aceite de soja y la parafina deriva del petróleo. Si dos respuestas se contradicen en un dato, es una señal para verificarlo en otra fuente: ninguna herramienta acierta siempre.</div>
   </div>
 
   <!-- ══════════ CHECKLIST ══════════ -->
@@ -2130,8 +2240,8 @@ body.cover-open { overflow: hidden; }
   <p class="area-sub">Marcá cada punto cuando lo hayas comprobado. El contador y la barra se actualizan solos. El último punto es opcional: no cuenta como pendiente.</p>
 
   <div class="p2-progreso" id="p2-progreso">
-    <div class="p2-prog-cab"><span class="p2-prog-t">Tu avance</span><span class="p2-contador" id="p2-contador">0 de 6</span></div>
-    <div class="p2-barra" id="p2-barra" role="progressbar" aria-label="Puntos marcados" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div class="p2-barra-fill" id="p2-barra-fill"></div></div>
+    <div class="p2-prog-cab"><span class="p2-prog-t">Tu avance</span><span class="p2-contador" id="p2-contador">0 de 8</span></div>
+    <div class="p2-barra" id="p2-barra" role="progressbar" aria-label="Puntos marcados" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0"><div class="p2-barra-fill" id="p2-barra-fill"></div></div>
     <div class="p2-estado" id="p2-estado">Todavía no marcaste ningún punto. A medida que lo vayas comprobando, marcalo acá.</div>
   </div>
 
@@ -2153,12 +2263,20 @@ body.cover-open { overflow: hidden; }
       <span class="p2-item-txt"><strong>Abrí Claude</strong><span>Entraste a claude.ai con tu sesión iniciada y ves el cuadro para escribir.</span></span>
     </label>
     <label class="p2-item">
-      <input type="checkbox" data-nombre="probar el mismo pedido en las tres" onchange="p2ChkActualizar()">
-      <span class="p2-item-txt"><strong>Probé el mismo pedido en las tres</strong><span>Las tres respondieron al pedido de la vela de soja y la parafina.</span></span>
+      <input type="checkbox" data-nombre="abrir Qwen" onchange="p2ChkActualizar()">
+      <span class="p2-item-txt"><strong>Abrí Qwen</strong><span>Entraste a chat.qwen.ai con tu sesión iniciada y ves el cuadro para escribir.</span></span>
+    </label>
+    <label class="p2-item">
+      <input type="checkbox" data-nombre="abrir Meta AI" onchange="p2ChkActualizar()">
+      <span class="p2-item-txt"><strong>Abrí Meta AI</strong><span>Entraste a meta.ai con tu sesión iniciada y ves el cuadro para escribir.</span></span>
+    </label>
+    <label class="p2-item">
+      <input type="checkbox" data-nombre="probar el mismo pedido en las cinco" onchange="p2ChkActualizar()">
+      <span class="p2-item-txt"><strong>Probé el mismo pedido en las cinco</strong><span>Las cinco respondieron al pedido de la vela de soja y la parafina.</span></span>
     </label>
     <label class="p2-item p2-item-opc">
       <input type="checkbox" data-nombre="instalar una aplicación en el celular" data-opcional="1" onchange="p2ChkActualizar()">
-      <span class="p2-item-txt"><strong>Instalé al menos una de las tres aplicaciones en el celular <span class="p2-opc">Opcional</span></strong><span>Iniciaste sesión con la misma cuenta que usás en la computadora.</span></span>
+      <span class="p2-item-txt"><strong>Instalé al menos una de las aplicaciones en el celular <span class="p2-opc">Opcional</span></strong><span>Iniciaste sesión con la misma cuenta que usás en la computadora.</span></span>
     </label>
   </div>
 
@@ -2205,7 +2323,7 @@ body.cover-open { overflow: hidden; }
     </div>
     <div class="accordion-body" id="p2-prob-carga">
       <ol class="p2-ol">
-        <li>Revisá que la dirección esté bien escrita: <strong>gemini.google.com</strong>, <strong>chatgpt.com</strong> y <strong>claude.ai</strong>. Hay sitios con nombres parecidos que no son los oficiales.</li>
+        <li>Revisá que la dirección esté bien escrita: <strong>gemini.google.com</strong>, <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, <strong>chat.qwen.ai</strong> y <strong>meta.ai</strong>. Hay sitios con nombres parecidos que no son los oficiales.</li>
         <li>Probá con otra red, por ejemplo los datos móviles del celular. Algunas redes (de un trabajo, un colegio o un lugar público) bloquean estos sitios.</li>
         <li>Probá con otro navegador o con una ventana privada.</li>
         <li>Si nada de eso alcanza, hacé el alta desde otro dispositivo, por ejemplo el celular.</li>
@@ -2219,7 +2337,7 @@ body.cover-open { overflow: hidden; }
       <span class="p2-flecha" aria-hidden="true">▼</span>
     </div>
     <div class="accordion-body" id="p2-prob-pago">
-      <p class="area-sub">Las tres herramientas muestran ofertas de planes pagos en distintos lugares de la pantalla. Para este curso no hace falta ninguno.</p>
+      <p class="area-sub">Varias de estas herramientas muestran ofertas de planes pagos en distintos lugares de la pantalla. Para este curso no hace falta ninguno.</p>
       <ol class="p2-ol">
         <li>Cerrá el aviso o elegí la opción de seguir con el plan gratuito.</li>
         <li>No cargues los datos de tu tarjeta. Si el alta no avanza sin ellos, frená y escribinos: el contacto está al pie de la guía.</li>
@@ -2236,7 +2354,7 @@ body.cover-open { overflow: hidden; }
       <p class="area-sub">El plan gratuito tiene límites de uso (ver el cuadro «Qué esperar del plan gratuito», verificado el 23/09/2026).</p>
       <ol class="p2-ol">
         <li>Esperá unos minutos y volvé a enviar el mismo pedido.</li>
-        <li>Si te avisa que llegaste al límite, hacé la prueba en otra de las tres herramientas y volvé a esta más tarde: en Claude, la ventana de uso se renueva cada 5 horas.</li>
+        <li>Si te avisa que llegaste al límite, hacé la prueba en otra de las herramientas y volvé a esta más tarde: en Claude, la ventana de uso se renueva cada 5 horas.</li>
         <li>Si el error persiste, sacá una captura de pantalla del mensaje y enviala junto con tu consulta: el contacto está al pie de la guía.</li>
       </ol>
     </div>
@@ -2247,8 +2365,8 @@ body.cover-open { overflow: hidden; }
     <h4>🏁 Al cerrar este paso vas a tener:</h4>
     <ul class="deliverable-list">
       <li><span class="del-icon">🏫</span> Tu lugar en el aula del curso, en Google Classroom.</li>
-      <li><span class="del-icon">✅</span> Gemini, ChatGPT y Claude abiertas, con tu sesión iniciada.</li>
-      <li><span class="del-icon">🔍</span> La comprobación de que las tres responden al mismo pedido, para poder comparar.</li>
+      <li><span class="del-icon">✅</span> Gemini, ChatGPT, Claude, Qwen y Meta AI abiertas, con tu sesión iniciada.</li>
+      <li><span class="del-icon">🔍</span> La comprobación de que las cinco responden al mismo pedido, para poder comparar.</li>
       <li><span class="del-icon">📱</span> Opcionalmente, una aplicación instalada en el celular.</li>
     </ul>
   </div>
@@ -2265,9 +2383,9 @@ body.cover-open { overflow: hidden; }
   <div class="activity-header">
     <div class="activity-badge">Paso 3</div>
     <h1 class="activity-title">Configurá tu perfil<br>y cuidá tus datos</h1>
-    <p class="activity-desc">Una IA responde mejor cuando sabe quién le escribe y cómo querés que te conteste. En este paso vas a dejar cargado tu perfil en las tres herramientas, vas a revisar qué guarda cada una y qué hace con tus conversaciones, y te vas a llevar una regla simple sobre qué datos no se cargan sin anonimizar.</p>
+    <p class="activity-desc">Una IA responde mejor cuando sabe quién le escribe y cómo querés que te conteste. En este paso vas a dejar cargado tu perfil en tus herramientas, vas a revisar qué guarda cada una y qué hace con tus conversaciones, y te vas a llevar una regla simple sobre qué datos no se cargan sin anonimizar.</p>
     <div class="activity-meta">
-      <div class="meta-item">⏱ 45 minutos</div>
+      <div class="meta-item">⏱ 50 minutos</div>
       <div class="meta-item">👤 Individual</div>
       <div class="meta-item">💻 Mejor en la computadora</div>
     </div>
@@ -2277,7 +2395,7 @@ body.cover-open { overflow: hidden; }
     <h3>¿Qué vas a lograr?</h3>
     <ul class="objectives-list">
       <li>Armar con la propia IA un texto corto que diga quién sos, cómo trabajás y cómo querés que te responda, sin escribirlo de cero.</li>
-      <li>Dejar ese texto cargado en <strong>Gemini</strong>, en <strong>ChatGPT</strong> y en <strong>Claude</strong>, cada una en su lugar.</li>
+      <li>Dejar ese texto cargado en <strong>Gemini</strong>, <strong>ChatGPT</strong>, <strong>Claude</strong> y <strong>Qwen</strong>, cada una en su lugar, y saber cómo usarlo en <strong>Meta AI</strong>, que no tiene dónde guardarlo.</li>
       <li>Saber qué recuerda cada herramienta de tus conversaciones y poder encender, revisar o apagar esa memoria.</li>
       <li>Revisar, una sola vez, si cada servicio usa tus conversaciones para mejorar su modelo.</li>
       <li>Tener clara la regla de los datos: qué información no se carga sin anonimizar y cómo se reemplaza.</li>
@@ -2286,12 +2404,12 @@ body.cover-open { overflow: hidden; }
 
   <div class="alert important">
     <span class="alert-icon">🧱</span>
-    <div><strong>Este paso arma la base del resto del curso.</strong> El texto que armes acá queda guardado en tus cuentas y se aplica a todas tus conversaciones nuevas, así que lo vas a usar en cada actividad que sigue. Necesitás las tres cuentas del Paso 2: si alguna todavía no está creada, volvé a ese paso antes de seguir.</div>
+    <div><strong>Este paso arma la base del resto del curso.</strong> El texto que armes acá queda guardado en tus cuentas y se aplica a todas tus conversaciones nuevas, así que lo vas a usar en cada actividad que sigue. Necesitás las cuentas del Paso 2: si alguna todavía no está creada, volvé a ese paso antes de seguir.</div>
   </div>
 
   <!-- ══════════ BLOQUE A — INSTRUCCIONES CON LA PROPIA IA ══════════ -->
   <div class="section-title"><span class="title-accent"></span>Armá tus instrucciones con la propia IA <span class="p3-tiempo">10 min</span></div>
-  <p class="area-sub">No hace falta que sepas escribirlas. Vas a pedirle a la propia IA que te entreviste: te hace entre 5 y 7 preguntas, de a una por vez, y al final arma el texto por vos. Después lo revisás con las cuatro piezas de un buen pedido y lo llevás a las tres herramientas.</p>
+  <p class="area-sub">No hace falta que sepas escribirlas. Vas a pedirle a la propia IA que te entreviste: te hace entre 5 y 7 preguntas, de a una por vez, y al final arma el texto por vos. Después lo revisás con las cuatro piezas de un buen pedido y lo llevás a tus herramientas.</p>
 
   <div class="prompt-box">
     <div class="prompt-header"><span class="prompt-label">🧭 Pedido — entrevista para armar tus instrucciones</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button></div>
@@ -2318,7 +2436,7 @@ body.cover-open { overflow: hidden; }
   <div class="steps-list">
     <div class="step"><div class="step-num">1</div><div class="step-body">
       <div class="step-title">Pegá el pedido y respondé, de a una pregunta</div>
-      <div class="step-content"><p>Abrí un chat nuevo en la herramienta que quieras, pegá el pedido y enviá. Va a empezar con la primera pregunta: contestale y esperá la siguiente. Con cualquiera de las tres alcanza; el texto sirve para las otras dos.</p></div>
+      <div class="step-content"><p>Abrí un chat nuevo en la herramienta que quieras, pegá el pedido y enviá. Va a empezar con la primera pregunta: contestale y esperá la siguiente. Con cualquiera alcanza; el texto sirve para las demás.</p></div>
     </div></div>
     <div class="step"><div class="step-num">2</div><div class="step-body">
       <div class="step-title">Revisá lo que te devolvió con las cuatro piezas</div>
@@ -2388,8 +2506,8 @@ body.cover-open { overflow: hidden; }
   </div>
 
   <!-- ══════════ BLOQUE B — DÓNDE SE PEGA ══════════ -->
-  <div class="section-title p3-st"><span class="title-accent"></span>Dónde se pega, herramienta por herramienta <span class="p3-tiempo">15 min</span></div>
-  <p class="area-sub">Es el mismo texto en las tres, pero cada una lo guarda en un lugar distinto. Hacelo en este orden: cargalo primero en <strong>una sola</strong> herramienta y hacé la prueba que está al final de este bloque. Si algo no te convence, corregís el texto una vez y recién ahí lo cargás en las otras dos.</p>
+  <div class="section-title p3-st"><span class="title-accent"></span>Dónde se pega, herramienta por herramienta <span class="p3-tiempo">20 min</span></div>
+  <p class="area-sub">Es el mismo texto en todas, pero cada una lo guarda en un lugar distinto, y Meta AI no tiene dónde guardarlo. Hacelo en este orden: cargalo primero en <strong>una sola</strong> herramienta y hacé la prueba que está al final de este bloque. Si algo no te convence, corregís el texto una vez y recién ahí lo cargás en las demás.</p>
 
   <div class="alert tip">
     <span class="alert-icon">🧭</span>
@@ -2498,17 +2616,74 @@ body.cover-open { overflow: hidden; }
     </div>
   </div>
 
+  <div class="model-accordion p3-acc">
+    <div class="accordion-header" onclick="toggleAccordion('p3-acc-qwen')">
+      <span class="p3-acc-t"><span class="tool-dot qwen"></span>Qwen</span>
+      <span class="p3-flecha">▼</span>
+    </div>
+    <div class="accordion-body" id="p3-acc-qwen">
+      <div class="steps-list">
+        <div class="step"><div class="step-num">1</div><div class="step-body">
+          <div class="step-title">Abrí «Personaliza Qwen»</div>
+          <div class="step-content"><p>En chat.qwen.ai, abrí el menú de tu cuenta y elegí <strong>Configuración</strong>. En la barra de la izquierda entrá en <strong>Personalización</strong> y abrí el cuadro <strong>Personaliza Qwen</strong>. Tiene cuatro partes.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">
+          <div class="step-title">Completá tu nombre y una presentación corta</div>
+          <div class="step-content"><p>En <strong>¿Cómo te gustaría que Qwen te llamara?</strong> poné tu nombre o tu apodo. En <strong>¿Qué le gustaría que Qwen supiera sobre usted…?</strong> escribí dos o tres líneas sobre a qué te dedicás: ese campo admite solo <strong>500 caracteres</strong>, así que tu texto completo no entra ahí.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body">
+          <div class="step-title">Elegí cómo querés que te responda</div>
+          <div class="step-content"><p>Hay cuatro estilos: <strong>Por defecto</strong>, <strong>Conciso</strong>, <strong>Socrático</strong> (te guía con preguntas) y <strong>Formal</strong>. Si dudás, dejá <strong>Por defecto</strong>: el tono ya lo define tu texto.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body">
+          <div class="step-title">Pegá el texto en «Instrucción personalizada»</div>
+          <div class="step-content">
+            <p>En <strong>Instrucción personalizada: ¿Cómo debería comportarse Qwen?</strong> pegá el texto completo que armaste: ese campo sí tiene lugar de sobra. Comprobá que el interruptor <strong>Habilitar en nuevo chat</strong>, abajo a la izquierda, esté encendido, y tocá <strong>Guardar</strong>.</p>
+            <p><span class="p3-disp">Verificado en pantalla 19/10/2026</span></p>
+                      </div>
+        </div></div>
+        <div class="step"><div class="step-num">5</div><div class="step-body">
+          <div class="step-title">Revisá el resto de la Personalización</div>
+          <div class="step-content"><p>En la misma pantalla hay otros interruptores. Si ves uno de memoria o uno que decide si tus chats se usan para mejorar el modelo, fijate cómo está y elegí vos. Si no encontrás esa opción, cargale solo lo que publicarías.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="model-accordion p3-acc">
+    <div class="accordion-header" onclick="toggleAccordion('p3-acc-meta')">
+      <span class="p3-acc-t"><span class="tool-dot meta"></span>Meta AI</span>
+      <span class="p3-flecha">▼</span>
+    </div>
+    <div class="accordion-body" id="p3-acc-meta">
+      <div class="alert warning">
+        <span class="alert-icon">🚫</span>
+        <div><strong>Meta AI no tiene un lugar para cargar tus instrucciones.</strong> No hay un campo donde dejarle tu texto guardado para todas las conversaciones, así que esta herramienta no se configura en este paso.</div>
+      </div>
+      <div class="steps-list">
+        <div class="step"><div class="step-num">1</div><div class="step-body">
+          <div class="step-title">Plan B: pegá tu texto al empezar el chat</div>
+          <div class="step-content"><p>Cuando la uses para algo de tu trabajo, abrí un chat nuevo y mandá primero tu texto de instrucciones, con una línea antes: <em>«Tené en cuenta esto en toda la conversación:»</em>. Después hacé tu pedido. Vale solo para ese chat: en el siguiente hay que volver a pegarlo.</p></div>
+        </div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body">
+          <div class="step-title">Tratala como la que más comparte</div>
+          <div class="step-content"><p>Como no hay una opción para configurar qué guarda ni para qué usa tus conversaciones, aplicale la regla de los datos de más abajo con más rigor que a las otras: nada que no publicarías.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
   <div class="prompt-box">
     <div class="prompt-header"><span class="prompt-label">🟢 Prueba — en un chat nuevo</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button></div>
     <div class="prompt-text">Vamos a probar mis instrucciones. Primero, decime en tres líneas qué sabés de mí y de mi trabajo. Después, escribí un saludo de bienvenida de dos oraciones para alguien que me contacta por primera vez, con el tono que te pedí.</div>
   </div>
-  <p class="area-sub">Abrí un <strong>chat nuevo</strong> (las instrucciones se aplican al empezar la conversación), pegá la prueba y enviá. Si la respuesta menciona tu trabajo y usa el tono que pediste, quedó cargado. Si responde de forma genérica, volvé al campo y fijate que el texto esté completo y guardado. Después repetí la carga y la prueba en las otras dos herramientas.</p>
+  <p class="area-sub">Abrí un <strong>chat nuevo</strong> (las instrucciones se aplican al empezar la conversación), pegá la prueba y enviá. Si la respuesta menciona tu trabajo y usa el tono que pediste, quedó cargado. Si responde de forma genérica, volvé al campo y fijate que el texto esté completo y guardado. Después repetí la carga y la prueba en las demás herramientas (en Meta AI, con el plan B).</p>
 
   <!-- ══════════ BLOQUE C — MEMORIA Y PRIVACIDAD ══════════ -->
   <div class="section-title p3-st"><span class="title-accent"></span>Memoria y privacidad: qué hace cada una <span class="p3-tiempo">8 min</span></div>
   <p class="area-sub">Son tres cosas distintas y conviene no mezclarlas. La <strong>memoria</strong> es lo que la herramienta recuerda de tus chats anteriores. Las <strong>instrucciones</strong> son el texto que acabás de cargar. Y el <strong>uso de tus conversaciones</strong> es si el servicio las aprovecha para mejorar su modelo.</p>
 
-  <div class="p3-fecha">📅 Verificado al 23/09/2026 · revisión documental; confirmalo con tu cuenta</div>
+  <div class="p3-fecha">📅 Gemini, ChatGPT y Claude verificados al 23/09/2026; Qwen y Meta AI, al 19/10/2026 · confirmalo con tu cuenta</div>
 
   <table class="ext-table p3-tabla">
     <thead>
@@ -2517,21 +2692,33 @@ body.cover-open { overflow: hidden; }
     <tbody>
       <tr>
         <td><span class="tool-dot gemini"></span> Gemini</td>
-        <td>Interruptor <strong>Memoria</strong> en Inteligencia personalizada: aprende de tus chats anteriores.<br><span class="p3-disp">Las tres · se apaga</span></td>
+        <td>Interruptor <strong>Memoria</strong> en Inteligencia personalizada: aprende de tus chats anteriores.<br><span class="p3-disp">Se apaga</span></td>
         <td>Las Apps conectadas (Gmail, Drive, Calendario) exigen tener activada <strong>Conservar la actividad</strong>. Con eso apagado, Gemini guarda igual tus chats 72 horas.<br><span class="p3-disp is-solo">Solo Gemini</span></td>
         <td>Existe una opción propia. Buscala en Configuración, en un apartado con un nombre como «Actividad».</td>
       </tr>
       <tr>
         <td><span class="tool-dot chatgpt"></span> ChatGPT</td>
-        <td>Opción de memoria dentro de Personalización: se enciende, se revisa y se apaga.<br><span class="p3-disp">Las tres · se apaga</span></td>
+        <td>Opción de memoria dentro de Personalización: se enciende, se revisa y se apaga.<br><span class="p3-disp">Se apaga</span></td>
         <td>Tus instrucciones personalizadas y «Acerca de ti» se aplican a todos los chats nuevos. Las «Respuestas rápidas» no son personalizadas ni usan tu memoria.</td>
         <td>Existe una opción propia. Buscala en Configuración, en un apartado con un nombre como «Datos».</td>
       </tr>
       <tr>
         <td><span class="tool-dot claude"></span> Claude</td>
-        <td>Interruptor <strong>Generar memoria a partir de los chats</strong>, en Configuración → Memoria.<br><span class="p3-disp">Las tres · se apaga</span></td>
+        <td>Interruptor <strong>Generar memoria a partir de los chats</strong>, en Configuración → Memoria.<br><span class="p3-disp">Se apaga</span></td>
         <td>El mismo interruptor controla la memoria de los chats y la de los proyectos. «Ver y administrar memoria» muestra lo que guardó.</td>
         <td>Existe una opción propia. Buscala en Configuración, en un apartado con un nombre como «Privacidad».</td>
+      </tr>
+      <tr>
+        <td><span class="tool-dot qwen"></span> Qwen</td>
+        <td>Si tu cuenta muestra una opción de memoria, está en Configuración → Personalización.</td>
+        <td>Elegís el estilo de respuesta (Por defecto, Conciso, Socrático o Formal). Con <strong>Habilitar en nuevo chat</strong> apagado, tus instrucciones no se aplican.<br><span class="p3-disp is-solo">Solo Qwen</span></td>
+        <td>Buscala en Configuración. Si no la encontrás, cargale solo lo que publicarías.</td>
+      </tr>
+      <tr>
+        <td><span class="tool-dot meta"></span> Meta AI</td>
+        <td>Sin un apartado para configurarla.</td>
+        <td>No guarda instrucciones: se pegan al comienzo de cada chat nuevo.<br><span class="p3-disp is-solo">Sin configuración</span></td>
+        <td>Sin una opción para configurarlo. Tratala como la que más comparte.</td>
       </tr>
     </tbody>
   </table>
@@ -2721,27 +2908,28 @@ body.cover-open { overflow: hidden; }
 
   <!-- ══════════ BLOQUE F — LISTA DE VERIFICACIÓN ══════════ -->
   <div class="section-title p3-st"><span class="title-accent"></span>Tu lista de verificación <span class="p3-tiempo">3 min</span></div>
-  <p class="area-sub">Marcá cada punto cuando lo hayas hecho. Cuando estén los seis, este paso queda completo.</p>
+  <p class="area-sub">Marcá cada punto cuando lo hayas hecho. Cuando estén los siete, este paso queda completo.</p>
 
   <div class="p3-chk">
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('gemini', this, event)"><span class="p3-box">✓</span><span class="tool-dot gemini"></span>Instrucciones pegadas en Gemini</button>
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('chatgpt', this, event)"><span class="p3-box">✓</span><span class="tool-dot chatgpt"></span>Instrucciones pegadas en ChatGPT</button>
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('claude', this, event)"><span class="p3-box">✓</span><span class="tool-dot claude"></span>Instrucciones pegadas en Claude</button>
+    <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('qwen', this, event)"><span class="p3-box">✓</span><span class="tool-dot qwen"></span>Instrucciones pegadas en Qwen</button>
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('memoria', this, event)"><span class="p3-box">✓</span>Revisé la memoria de cada una</button>
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('uso', this, event)"><span class="p3-box">✓</span>Revisé la opción de uso de mis conversaciones en cada una</button>
     <button type="button" class="p3-chk-item" role="checkbox" aria-checked="false" onclick="p3Chk('regla', this, event)"><span class="p3-box">✓</span>Entendí la regla de los datos</button>
   </div>
 
   <div class="p3-progreso" aria-live="polite">
-    <div class="p3-progreso-txt"><strong id="p3-chk-cont">0 de 6</strong> puntos completos</div>
+    <div class="p3-progreso-txt"><strong id="p3-chk-cont">0 de 7</strong> puntos completos</div>
     <div class="p3-barra"><span id="p3-chk-barra"></span></div>
   </div>
-  <div class="p3-res completo" id="p3-chk-fin" hidden><strong>Paso 3 completo.</strong> Tus tres herramientas saben quién sos, revisaste qué guardan y tenés clara la regla de los datos. Podés seguir con el Paso 4.</div>
+  <div class="p3-res completo" id="p3-chk-fin" hidden><strong>Paso 3 completo.</strong> Tus herramientas saben quién sos, revisaste qué guardan y tenés clara la regla de los datos. Podés seguir con el Paso 4.</div>
 
   <div class="result-panel">
     <h4>🏁 Al cerrar este paso vas a tener:</h4>
     <ul class="deliverable-list">
-      <li><span class="del-icon">🧱</span> Un texto de instrucciones propio, armado con la IA, cargado en Gemini, ChatGPT y Claude, con una copia guardada.</li>
+      <li><span class="del-icon">🧱</span> Un texto de instrucciones propio, armado con la IA, cargado en Gemini, ChatGPT, Claude y Qwen, con una copia guardada para pegar en Meta AI cuando la uses.</li>
       <li><span class="del-icon">🧠</span> La memoria de cada herramienta revisada: sabés qué recuerda y cómo se apaga.</li>
       <li><span class="del-icon">🔒</span> Revisada, una vez, la opción que decide si tus conversaciones se usan para mejorar el modelo.</li>
       <li><span class="del-icon">🏷️</span> La regla de los datos incorporada: qué no se carga sin anonimizar y con qué etiquetas se reemplaza.</li>
@@ -3990,7 +4178,7 @@ if (typeof alInicio === 'function') alInicio(function () { p1Iniciar(); });
    Paso 2 — Creá tus cuentas
 
    Dos piezas propias, las dos de un clic y con respuesta en vivo:
-     · Los acordeones de las tres herramientas y de la resolución de
+     · Los acordeones de las cinco herramientas y de la resolución de
        problemas. Reusan `toggleAccordion` del núcleo; esta capa solo le
        suma el estado `aria-expanded` del encabezado (que gira la flecha)
        y la tecla Enter o Espacio, porque el encabezado es un div.
@@ -4055,11 +4243,11 @@ function p2ChkActualizar() {
     msg = 'Llevás ' + reqHechos + ' de ' + reqTotal + ' puntos obligatorios. ' +
       (resta === 1 ? 'Te falta uno' : 'Te faltan ' + resta) + ': ' + p2Unir(faltan) + '.';
   } else if (marcadas < total) {
-    msg = 'Listo lo obligatorio: el aula y las tres herramientas están abiertas y comprobadas. ' +
+    msg = 'Listo lo obligatorio: el aula y las cinco herramientas están abiertas y comprobadas. ' +
       'Podés seguir con el Paso 3. La aplicación del celular es opcional.';
     listo = true;
   } else {
-    msg = 'Completaste los seis puntos, incluida la aplicación del celular. Podés seguir con el Paso 3.';
+    msg = 'Completaste los ' + total + ' puntos, incluida la aplicación del celular. Podés seguir con el Paso 3.';
     listo = true;
   }
 
